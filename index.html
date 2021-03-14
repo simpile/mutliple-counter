@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Multiple Counters</title>
 </head>
 
 <body>
-    <div>
-
-        <div>
-            <div>
-                <input type="number" placeholder="step">
+    <div class="container bg-secondary pt-4 h-100">
+        <div id="inputContainer" class="row">
+            <div class="col-md-9">
+                <input type="number" placeholder="step" class="form-control" type="number" placeholder="step">
             </div>
-            <div>
-                <button>Add Counter</button>
+            <div class="col-md-3 mt-3 mt-md-0">
+                <button  class="btn btn-primary w-100" onclick="onAddCounter()">Add Counter</button>
             </div>
         </div>
-        <div>
-            <div>
-                <div>
-                    <div>step 1</div>
-                    <div>
-                        <h5></h5>
-                        <button>Run</button>
+        <div id="counterContainer" class="row mt-4">
+            <div class="col-md-3 col-sm-6 col-12">
+                <div class="card text-dark border-dark  mb-3 text-center">
+                    <div class="card-header">step 1</div>
+                    <div class="card-body">
+                        <h5 id="counter-0" class="card-text"></h5>
+                        <button  onclick="run()" class="btn btn-success">Run</button>
                     </div>
                 </div>
             </div>
